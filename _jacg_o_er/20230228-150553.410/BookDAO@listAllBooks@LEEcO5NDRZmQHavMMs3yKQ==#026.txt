@@ -1,0 +1,16 @@
+com.pluralsight.BookDAO:listAllBooks()
+[0]#com.pluralsight.BookDAO:listAllBooks()
+[1]#  [BookDAO:46]	java.util.ArrayList:<init>()
+[1]#  [BookDAO:51]	java.sql.Connection:createStatement()
+[1]#  [BookDAO:53]	java.sql.Statement:executeQuery(java.lang.String)	!ext_data!method_call_info@{"args":{"0":{"v":["SELECT * FROM book"]}}}
+[1]#  [BookDAO:55]	java.sql.ResultSet:next()
+[1]#  [BookDAO:56]	java.sql.ResultSet:getInt(java.lang.String)	!ext_data!method_call_info@{"args":{"0":{"v":["id"]}}}
+[1]#  [BookDAO:57]	java.sql.ResultSet:getString(java.lang.String)	!ext_data!method_call_info@{"args":{"0":{"v":["title"]}}}
+[1]#  [BookDAO:58]	java.sql.ResultSet:getString(java.lang.String)	!ext_data!method_call_info@{"args":{"0":{"v":["author"]}}}
+[1]#  [BookDAO:59]	java.sql.ResultSet:getFloat(java.lang.String)	!ext_data!method_call_info@{"args":{"0":{"v":["price"]}}}
+[1]#  [BookDAO:61]	com.pluralsight.Book:<init>(int,java.lang.String,java.lang.String,float)
+[2]#    [Book:15]	java.lang.Object:<init>()
+[1]#  [BookDAO:62]	java.util.ArrayList:add(java.lang.Object)	!ext_data!method_call_info@{"args":{"0":{"t":["com.pluralsight.Book"]}}}
+[1]#  [BookDAO:65]	java.sql.ResultSet:close()
+[1]#  [BookDAO:66]	java.sql.Statement:close()
+[1]#  [BookDAO:68]	java.sql.SQLException:printStackTrace()

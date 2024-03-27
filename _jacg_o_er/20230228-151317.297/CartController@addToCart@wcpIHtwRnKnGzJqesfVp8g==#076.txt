@@ -1,0 +1,35 @@
+com.pluralsight.CartController:addToCart(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[0]#com.pluralsight.CartController:addToCart(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[1]#  [CartController:61]	javax.servlet.http.HttpServletRequest:getSession()
+[1]#  [CartController:62]	javax.servlet.http.HttpServletRequest:getParameter(java.lang.String)	!ext_data!method_call_info@{"args":{"0":{"v":["id"]}}}
+[1]#  [CartController:63]	java.lang.Integer:parseInt(java.lang.String)
+[1]#  [CartController:64]	javax.servlet.http.HttpServletRequest:getParameter(java.lang.String)	!ext_data!method_call_info@{"args":{"0":{"v":["quantity"]}}}
+[1]#  [CartController:65]	java.lang.Integer:parseInt(java.lang.String)
+[1]#  [CartController:68]	com.pluralsight.BookDAO:getBook(int)
+[2]#    [BookDAO:23]	java.sql.Connection:prepareStatement(java.lang.String)	!ext_data!method_call_info@{"args":{"0":{"v":["SELECT * FROM book WHERE id = ?"]}}}
+[2]#    [BookDAO:24]	java.sql.PreparedStatement:setInt(int,int)	!ext_data!method_call_info@{"args":{"0":{"v":["1"]}}}
+[2]#    [BookDAO:26]	java.sql.PreparedStatement:executeQuery()
+[2]#    [BookDAO:28]	java.sql.ResultSet:next()
+[2]#    [BookDAO:29]	java.sql.ResultSet:getString(java.lang.String)	!ext_data!method_call_info@{"args":{"0":{"v":["title"]}}}
+[2]#    [BookDAO:30]	java.sql.ResultSet:getString(java.lang.String)	!ext_data!method_call_info@{"args":{"0":{"v":["author"]}}}
+[2]#    [BookDAO:31]	java.sql.ResultSet:getFloat(java.lang.String)	!ext_data!method_call_info@{"args":{"0":{"v":["price"]}}}
+[2]#    [BookDAO:33]	com.pluralsight.Book:<init>(int,java.lang.String,java.lang.String,float)
+[3]#      [Book:15]	java.lang.Object:<init>()
+[2]#    [BookDAO:36]	java.sql.ResultSet:close()
+[2]#    [BookDAO:37]	java.sql.PreparedStatement:close()
+[2]#    [BookDAO:39]	java.sql.SQLException:printStackTrace()
+[1]#  [CartController:73]	javax.servlet.http.HttpSession:getAttribute(java.lang.String)	!ext_data!method_call_info@{"args":{"0":{"v":["cart"]}}}
+[1]#  [CartController:78]	com.pluralsight.ShoppingCart:<init>()
+[2]#    [ShoppingCart:6]	java.lang.Object:<init>()
+[2]#    [ShoppingCart:7]	java.util.ArrayList:<init>()
+[1]#  [CartController:79]	javax.servlet.http.HttpSession:setAttribute(java.lang.String,java.lang.Object)	!ext_data!method_call_info@{"args":{"0":{"v":["cart"]},"1":{"t":["com.pluralsight.ShoppingCart"]}}}
+[1]#  [CartController:83]	com.pluralsight.ShoppingCart:addCartItem(com.pluralsight.Book,int)
+[2]#    [ShoppingCart:16]	com.pluralsight.CartItem:<init>(com.pluralsight.Book,int)
+[3]#      [CartItem:7]	java.lang.Object:<init>()
+[2]#    [ShoppingCart:17]	java.util.ArrayList:add(java.lang.Object)	!ext_data!method_call_info@{"args":{"0":{"t":["com.pluralsight.CartItem"]}}}
+[2]#    [ShoppingCart:18]	com.pluralsight.ShoppingCart:calculateOrderTotal()
+[3]#      [ShoppingCart:48]	java.util.ArrayList:size()
+[3]#      [ShoppingCart:49]	java.util.ArrayList:get(int)	!ext_data!method_call_info@{"args":{"0":{"v":["0"]}}}
+[3]#      [ShoppingCart:50]	com.pluralsight.CartItem:getTotalCost()
+[4]#        [CartItem:28]	com.pluralsight.Book:getPrice()
+[3]#      [ShoppingCart:53]	com.pluralsight.ShoppingCart:setOrderTotal(double)	!ext_data!method_call_info@{"args":{"0":{"v":["0.0"]}}}

@@ -1,0 +1,1 @@
+J	1	D:\Desktop\javaweb\Java-BookStoreShoppingCart-master\out\artifacts\bookstore_war2\bookstore_war.war

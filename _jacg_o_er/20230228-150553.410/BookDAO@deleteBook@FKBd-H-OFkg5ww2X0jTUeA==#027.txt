@@ -1,0 +1,7 @@
+com.pluralsight.BookDAO:deleteBook(int)
+[0]#com.pluralsight.BookDAO:deleteBook(int)
+[1]#  [BookDAO:96]	java.sql.Connection:prepareStatement(java.lang.String)	!ext_data!method_call_info@{"args":{"0":{"v":["DELETE FROM book WHERE id = ?"]}}}
+[1]#  [BookDAO:97]	java.sql.PreparedStatement:setInt(int,int)	!ext_data!method_call_info@{"args":{"0":{"v":["1"]}}}
+[1]#  [BookDAO:98]	java.sql.PreparedStatement:executeUpdate()
+[1]#  [BookDAO:100]	java.sql.PreparedStatement:close()
+[1]#  [BookDAO:102]	java.sql.SQLException:printStackTrace()

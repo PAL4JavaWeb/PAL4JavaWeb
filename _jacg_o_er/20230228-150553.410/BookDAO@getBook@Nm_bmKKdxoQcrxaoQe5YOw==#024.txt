@@ -1,0 +1,14 @@
+com.pluralsight.BookDAO:getBook(int)
+[0]#com.pluralsight.BookDAO:getBook(int)
+[1]#  [BookDAO:23]	java.sql.Connection:prepareStatement(java.lang.String)	!ext_data!method_call_info@{"args":{"0":{"v":["SELECT * FROM book WHERE id = ?"]}}}
+[1]#  [BookDAO:24]	java.sql.PreparedStatement:setInt(int,int)	!ext_data!method_call_info@{"args":{"0":{"v":["1"]}}}
+[1]#  [BookDAO:26]	java.sql.PreparedStatement:executeQuery()
+[1]#  [BookDAO:28]	java.sql.ResultSet:next()
+[1]#  [BookDAO:29]	java.sql.ResultSet:getString(java.lang.String)	!ext_data!method_call_info@{"args":{"0":{"v":["title"]}}}
+[1]#  [BookDAO:30]	java.sql.ResultSet:getString(java.lang.String)	!ext_data!method_call_info@{"args":{"0":{"v":["author"]}}}
+[1]#  [BookDAO:31]	java.sql.ResultSet:getFloat(java.lang.String)	!ext_data!method_call_info@{"args":{"0":{"v":["price"]}}}
+[1]#  [BookDAO:33]	com.pluralsight.Book:<init>(int,java.lang.String,java.lang.String,float)
+[2]#    [Book:15]	java.lang.Object:<init>()
+[1]#  [BookDAO:36]	java.sql.ResultSet:close()
+[1]#  [BookDAO:37]	java.sql.PreparedStatement:close()
+[1]#  [BookDAO:39]	java.sql.SQLException:printStackTrace()

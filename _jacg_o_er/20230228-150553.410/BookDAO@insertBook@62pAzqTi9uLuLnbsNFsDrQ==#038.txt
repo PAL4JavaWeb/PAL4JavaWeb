@@ -1,0 +1,12 @@
+com.pluralsight.BookDAO:insertBook(com.pluralsight.Book)
+[0]#com.pluralsight.BookDAO:insertBook(com.pluralsight.Book)
+[1]#  [BookDAO:77]	java.sql.Connection:prepareStatement(java.lang.String)	!ext_data!method_call_info@{"args":{"0":{"v":["INSERT INTO book (title, author, price) VALUES (?, ?, ?)"]}}}
+[1]#  [BookDAO:78]	com.pluralsight.Book:getTitle()
+[1]#  [BookDAO:78]	java.sql.PreparedStatement:setString(int,java.lang.String)	!ext_data!method_call_info@{"args":{"0":{"v":["1"]}}}
+[1]#  [BookDAO:79]	com.pluralsight.Book:getAuthor()
+[1]#  [BookDAO:79]	java.sql.PreparedStatement:setString(int,java.lang.String)	!ext_data!method_call_info@{"args":{"0":{"v":["2"]}}}
+[1]#  [BookDAO:80]	com.pluralsight.Book:getPrice()
+[1]#  [BookDAO:80]	java.sql.PreparedStatement:setFloat(int,float)	!ext_data!method_call_info@{"args":{"0":{"v":["3"]}}}
+[1]#  [BookDAO:82]	java.sql.PreparedStatement:executeUpdate()
+[1]#  [BookDAO:83]	java.sql.PreparedStatement:close()
+[1]#  [BookDAO:86]	java.sql.SQLException:printStackTrace()

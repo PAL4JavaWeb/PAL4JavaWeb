@@ -1,0 +1,14 @@
+com.pluralsight.BookDAO:updateBook(com.pluralsight.Book)
+[0]#com.pluralsight.BookDAO:updateBook(com.pluralsight.Book)
+[1]#  [BookDAO:111]	java.sql.Connection:prepareStatement(java.lang.String)	!ext_data!method_call_info@{"args":{"0":{"v":["UPDATE book SET title = ?, author = ?, price = ? WHERE id = ?"]}}}
+[1]#  [BookDAO:112]	com.pluralsight.Book:getTitle()
+[1]#  [BookDAO:112]	java.sql.PreparedStatement:setString(int,java.lang.String)	!ext_data!method_call_info@{"args":{"0":{"v":["1"]}}}
+[1]#  [BookDAO:113]	com.pluralsight.Book:getAuthor()
+[1]#  [BookDAO:113]	java.sql.PreparedStatement:setString(int,java.lang.String)	!ext_data!method_call_info@{"args":{"0":{"v":["2"]}}}
+[1]#  [BookDAO:114]	com.pluralsight.Book:getPrice()
+[1]#  [BookDAO:114]	java.sql.PreparedStatement:setFloat(int,float)	!ext_data!method_call_info@{"args":{"0":{"v":["3"]}}}
+[1]#  [BookDAO:115]	com.pluralsight.Book:getId()
+[1]#  [BookDAO:115]	java.sql.PreparedStatement:setInt(int,int)	!ext_data!method_call_info@{"args":{"0":{"v":["4"]}}}
+[1]#  [BookDAO:117]	java.sql.PreparedStatement:executeUpdate()
+[1]#  [BookDAO:118]	java.sql.PreparedStatement:close()
+[1]#  [BookDAO:120]	java.sql.SQLException:printStackTrace()

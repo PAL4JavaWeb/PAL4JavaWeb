@@ -1,0 +1,39 @@
+com.pluralsight.CartController:init()
+[0]#com.pluralsight.CartController:init()
+[1]#  [CartController:22]	com.pluralsight.DBConnection:<init>()
+[2]#    [DBConnection:13]	java.lang.Object:<init>()
+[2]#    [DBConnection:14]	com.pluralsight.DBConnection:connect()
+[3]#      [DBConnection:23]	java.lang.Class:forName(java.lang.String)	!ext_data!method_call_info@{"args":{"0":{"v":["org.sqlite.JDBC"]}}}
+[3]#      [DBConnection:24]	java.sql.DriverManager:getConnection(java.lang.String)	!ext_data!method_call_info@{"args":{"0":{"v":["jdbc:sqlite:book_store.db"]}}}
+[3]#      [DBConnection:25]	java.io.PrintStream:println(java.lang.String)	!ext_data!method_call_info@{"obj":{"sf":["java.lang.System:out"]},"args":{"0":{"v":["Opened database successfully"]}}}
+[3]#      [DBConnection:27]	com.pluralsight.DBConnection:createTableIfNotExists()
+[4]#        [DBConnection:36]	java.sql.Connection:getMetaData()
+[4]#        [DBConnection:37]	java.sql.DatabaseMetaData:getTables(java.lang.String,java.lang.String,java.lang.String,java.lang.String[])
+[4]#        [DBConnection:38]	java.sql.Connection:createStatement()
+[4]#        [DBConnection:39]	java.sql.ResultSet:next()
+[4]#        [DBConnection:47]	java.sql.Statement:executeUpdate(java.lang.String)	!ext_data!method_call_info@{"args":{"0":{"v":["CREATE TABLE book (id INTEGER PRIMARY KEY NOT NULL, title TEXT NOT NULL,  author TEXT NOT NULL,  price REAL)"]}}}
+[4]#        [DBConnection:50]	java.sql.Statement:executeUpdate(java.lang.String)	!ext_data!method_call_info@{"args":{"0":{"v":["INSERT INTO book (title, author, price) VALUES (\"1984\", \"George Orwell\", 1.00)"]}}}
+[4]#        [DBConnection:52]	java.sql.Statement:close()
+[4]#        [DBConnection:55]	java.lang.StringBuilder:<init>()
+[4]#        [DBConnection:55]	java.lang.Exception:getClass()	!ext_data!method_call_info@{"obj":{"t":["java.lang.Exception"]}}
+[4]#        [DBConnection:55]	java.lang.Class:getName()
+[4]#        [DBConnection:55]	java.lang.StringBuilder:append(java.lang.String)
+[4]#        [DBConnection:55]	java.lang.StringBuilder:append(java.lang.String)	!ext_data!method_call_info@{"args":{"0":{"v":[": "]}}}
+[4]#        [DBConnection:55]	java.lang.Exception:getMessage()
+[4]#        [DBConnection:55]	java.lang.StringBuilder:append(java.lang.String)
+[4]#        [DBConnection:55]	java.lang.StringBuilder:toString()
+[4]#        [DBConnection:55]	java.io.PrintStream:println(java.lang.String)	!ext_data!method_call_info@{"obj":{"sf":["java.lang.System:err"]}}
+[4]#        [DBConnection:56]	java.lang.System:exit(int)	!ext_data!method_call_info@{"args":{"0":{"v":["0"]}}}
+[3]#      [DBConnection:29]	java.lang.StringBuilder:<init>()
+[3]#      [DBConnection:29]	java.lang.Exception:getClass()	!ext_data!method_call_info@{"obj":{"t":["java.lang.Exception"]}}
+[3]#      [DBConnection:29]	java.lang.Class:getName()
+[3]#      [DBConnection:29]	java.lang.StringBuilder:append(java.lang.String)
+[3]#      [DBConnection:29]	java.lang.StringBuilder:append(java.lang.String)	!ext_data!method_call_info@{"args":{"0":{"v":[": "]}}}
+[3]#      [DBConnection:29]	java.lang.Exception:getMessage()
+[3]#      [DBConnection:29]	java.lang.StringBuilder:append(java.lang.String)
+[3]#      [DBConnection:29]	java.lang.StringBuilder:toString()
+[3]#      [DBConnection:29]	java.io.PrintStream:println(java.lang.String)	!ext_data!method_call_info@{"obj":{"sf":["java.lang.System:err"]}}
+[3]#      [DBConnection:30]	java.lang.System:exit(int)	!ext_data!method_call_info@{"args":{"0":{"v":["0"]}}}
+[1]#  [CartController:23]	com.pluralsight.DBConnection:getConnection()
+[1]#  [CartController:23]	com.pluralsight.BookDAO:<init>(java.sql.Connection)
+[2]#    [BookDAO:14]	java.lang.Object:<init>()

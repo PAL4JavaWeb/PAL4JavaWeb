@@ -1,0 +1,6 @@
+com.pluralsight.CartController:destroy()
+[0]#com.pluralsight.CartController:destroy()
+[1]#  [CartController:27]	com.pluralsight.DBConnection:disconnect()
+[2]#    [DBConnection:63]	java.sql.Connection:isClosed()
+[2]#    [DBConnection:64]	java.sql.Connection:close()
+[2]#    [DBConnection:67]	java.sql.SQLException:printStackTrace()
