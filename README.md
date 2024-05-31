@@ -42,7 +42,8 @@ Repository: [java-all-call-graph](https://github.com/Adrninistrator/java-all-cal
 Located in the `javaweb` directory.
 
 ## Example of the Generation Module
-![image](https://github.com/PAL4JavaWeb/PAL4JavaWeb/assets/76843234/f376e107-3275-4570-b8eb-c23a42345275)
+<img src="https://github.com/PAL4JavaWeb/PAL4JavaWeb/assets/76843234/62fe7902-db25-4e8e-b56f-c79bd699ef25" alt="generate" width="350" height="800"/>
+
 
 
 
