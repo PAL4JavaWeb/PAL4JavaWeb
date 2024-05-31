@@ -40,3 +40,9 @@ Repository: [java-all-call-graph](https://github.com/Adrninistrator/java-all-cal
 
 ## Test Applications
 Located in the `javaweb` directory.
+
+## Example of the Generation Module
+![image](https://github.com/PAL4JavaWeb/PAL4JavaWeb/assets/76843234/f376e107-3275-4570-b8eb-c23a42345275)
+
+
+
