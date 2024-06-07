@@ -39,7 +39,41 @@ Repository: [java-all-call-graph](https://github.com/Adrninistrator/java-all-cal
 4. The result will be automatically generated at the address specified in step 3.
 
 ## Test Applications
-Located in the `javaweb` directory.
+macrozheng/mall  
+lenve/vhr  
+elunez/eladmin  
+201206030/novel  
+stylefeng/Guns  
+ZHENFENG13/My-Blog  
+kanwangzjm/funiture  
+JaceyRx/Examination_System  
+withstars/Books-Management-System  
+guqing/qinlouyue  
+support-project/knowledge  
+ihengshuai/ktv-select_music-system  
+yupaits/docs-manage  
+LovebuildJ/book-manager  
+b2stry/mytwitter  
+muyinchen/migo-security  
+gpengDemo/Estore  
+liutengjian66/COVID  
+qiutiandefeng/yfdoc  
+Azure99/RainngCourse  
+Advancedpawn2020/cinema  
+Cool-Coding/angular-springboot-demo  
+Laverrr/bookstore  
+weiqingwen/spring-boot-forum  
+liujianview/gymxmjpa  
+huija/bicycleSharingServer  
+wdjisn/SpringBoot-Admin  
+ZemelZhu/MMS  
+ZemelZhu/Chatrum  
+mojooo/perManaGement  
+W-CORN/Cashier_management_system  
+DemoTree/NJU-SEII  
+sthoppan21/Java-BookStoreShoppingCart  
+Cool-Coding/angular-springboot-demo  
+ming-soft/MCMS  
 
 ## Example of the Generation Module
 <img src="https://github.com/PAL4JavaWeb/PAL4JavaWeb/assets/76843234/62fe7902-db25-4e8e-b56f-c79bd699ef25" alt="generate" width="350" height="800"/>
