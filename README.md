@@ -71,9 +71,8 @@ ZemelZhu/Chatrum
 mojooo/perManaGement  
 W-CORN/Cashier_management_system  
 DemoTree/NJU-SEII  
-macktong/wetech-admin
-smartboy37597/NewsCMS
-Cool-Coding/angular-springboot-demo  
+macktong/wetech-admin  
+smartboy37597/NewsCMS  
 ming-soft/MCMS  
 
 ## Example of the Generation Module
