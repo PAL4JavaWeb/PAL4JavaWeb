@@ -71,7 +71,8 @@ ZemelZhu/Chatrum
 mojooo/perManaGement  
 W-CORN/Cashier_management_system  
 DemoTree/NJU-SEII  
-sthoppan21/Java-BookStoreShoppingCart  
+macktong/wetech-admin
+smartboy37597/NewsCMS
 Cool-Coding/angular-springboot-demo  
 ming-soft/MCMS  
 
